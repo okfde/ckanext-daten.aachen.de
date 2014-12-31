@@ -1,52 +1,32 @@
-/* Bild einblenden mit width: 420px und height: 220px */
-#stadt_aachen_img {
-  width: 0px;
-  height: 0px;
-  /* background property set in admin config */
+html{
+  background-color:#6893BD;
+  color: #000000;
 }
-
-/* Technique based on that used on offenedaten.frankfurt.de to insert a banner image */
-.topimage {
-  position: relative;
-  height: 140px;
-  background-color: #6893BD;
-}
-
-.topimagediv {
-  position: relative;
-  width: 940px;
-  height: 140px;
-  margin-left: auto;
-  margin-right: auto;
-  /* background property set in admin config */
-}
-/* End banner image */
 
 a:hover, a:focus {
   text-decoration: none;
 }
 
-.account-masthead .account ul li a {
-    color: #000000;
+h1, h2, .search-form h2, h3 {
+  color: #5684b6;
 }
 
-.account-masthead .account ul li a:hover {
-  background-color: #eeeeee;
-  color: #000000;
+.homepage .module-search .module-content {
+  background: #eeeeee;
 }
 
-
-.account-masthead .account ul {
-  background: #ffffff;
+.homepage .module-search .tags {
+  background: url('../../../base/images/bg.png') repeat scroll 0% 0% #EEE;
 }
 
-.account-masthead .account .notifications a span {
-  background-color: #000000;
-  color: #eeeeee;
+.main.homepage {
+  border-top: 0px solid #cccccc;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
-.account-masthead .account .notifications a:hover span {
-  color: #ffffff;
-  background-color: #000000;
+
+.masthead, .homepage{
+  background:#6893BD;
 }
 
 .masthead hgroup h2 {
@@ -58,13 +38,80 @@ a:hover, a:focus {
   font-size: 25px;
 }
 
-.masthead, .homepage{
-  background:#6893BD;
+.masthead .navigation .nav-pills li a:hover,
+.masthead .navigation .nav-pills li.active a {
+  background-color: #DDE6F0;
+  color: #000000;
+}
+
+.site-footer, .site-footer a, .site-footer label, .site-footer small {
+  background: #FFFFFF;
+  color: #000000;
 }
 
 .attribution .ckan-footer-logo {
   background: #999999 url("../../../base/images/ckan-logo-footer.png") no-repeat center;
   padding: 5px;
+}
+
+li[role="main"], .main {
+  background: none;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.hero .module-dark .module-content {
+  background-color:#6893BD;
+}
+
+.hero .tags {
+  background-color:#6893BD;
+}
+
+.hero {
+  background: none;
+  min-height: 280px;
+  padding: 20px 0;
+}
+
+.search-form {
+  margin: 0px -25px 20px -25px;
+  background: #eeeeee;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.module-content, .wrapper {
+  background: #fbfbfb;
+}
+
+.account-masthead{
+  background:#6893BD;
+}
+
+.account-masthead .account ul li a {
+    color: #000000;
+}
+
+.account-masthead .account ul li a:hover {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.account-masthead .account ul {
+  background: #ffffff;
+}
+
+.account-masthead .account .notifications a span {
+  background-color: #000000;
+  color: #eeeeee;
+}
+
+.account-masthead .account .notifications a:hover span {
+  color: #ffffff;
+  background-color: #000000;
 }
 
 .btn-primary {
@@ -92,79 +139,34 @@ a:hover, a:focus {
   background-color: #555555;
   *background-color: #0D0D0D;
 }
+
 .btn-primary:active,
 .btn-primary.active {
   background-color: #0E0E0E \9;
 }
 
-.module-content, .wrapper {
-  background: #fbfbfb;
+/* Spezifische Bilder */
+/* Bild einblenden mit width: 420px und height: 220px */
+#stadt_aachen_img {
+  width: 0px;
+  height: 0px;
+  /* background property set in admin config */
 }
 
-.search-form {
-  margin: 0px -25px 20px -25px;
-  background: #eeeeee;
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.homepage .module-search .module-content {
-  background: #eeeeee;
-}
-
-.homepage .module-search .tags {
-  background: url('../../../base/images/bg.png') repeat scroll 0% 0% #EEE;
-}
-
-h1, h2, .search-form h2, h3 {
-  color: #5684b6;
-}
-
-.masthead .navigation .nav-pills li a:hover,
-.masthead .navigation .nav-pills li.active a {
-  background-color: #DDE6F0;
-  color: #000000;
-}
-
-.site-footer, .site-footer a, .site-footer label, .site-footer small {
-  background: #FFFFFF;
-  color: #000000;
-}
-
-html{
-  background-color:#6893BD;
-  color: #000000;
-}
-
-.account-masthead{
-  background:#6893BD;
-}
-
-.hero .module-dark .module-content {
-  background-color:#6893BD;
-}
-
-.hero .tags {
-  background-color:#6893BD;
-}
-
-.hero {
-  background: none;
-  min-height: 280px;
-  padding: 20px 0;
-}
-
-.main.homepage {
-  border-top: 0px solid #cccccc;
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-
-
-li[role="main"], .main {
-  background: none;
-  padding-bottom: 20px;
-  padding-top: 10px;
+/* Technique based on that used on offenedaten.frankfurt.de to insert a banner image */
+.topimage {
   position: relative;
+  height: 140px;
+  background-color: #6893BD;
 }
+
+.topimagediv {
+  position: relative;
+  width: 940px;
+  height: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background property set in admin config */
+}
+/* End banner image */
+/* End Bilder */
